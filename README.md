@@ -93,8 +93,8 @@ Selector(["gym"])(Comp);
 **类型：** Func  
 **用途：** 为App提过一个自定义的store，用来存储所有被管理的状态  
 **参数**  
-*Store*: 存储状态对象
-*App*: 已声明的Application类
+*Store*: 存储状态对象  
+*App*: 已声明的Application类  
 
 **返回值：** 无  
 **语法**
@@ -109,9 +109,9 @@ Provider({})(App);
 **类型：** Func  
 **用途：** 选取一个或多个数据模型，以及若干个Action绑定到你的组件或页面上。  
 **参数**  
-*modelArray*: 选择的模型
-*actionMap*: 选择的事件
-*Class*: 绑定的组件或页面
+*modelArray*: 选择的模型  
+*actionMap*: 选择的事件  
+*Class*: 绑定的组件或页面  
 
 **返回值：** 无  
 **语法**
@@ -129,7 +129,7 @@ Selector(["home"],{run})(Home);
 **类型：** Func   
 **用途：** 将自定义的模型注册到容器中，以供pag或component去选取绑定。只需要注册一次，整个小程序的生命周期内可用。直到小程序被回收，这和store的生命周期相同   
 **参数**  
-*model*: 模型
+*model*: 模型  
 
 **返回值：** 无  
 **语法**
@@ -145,9 +145,9 @@ modelregister(Model);
 **类型：** Func  
 **用途：** 派发一个Action，一般情况不推荐使用。除非在组件或者page以外的地方  
 **参数**  
-*Action*：动作
-*callBack*：回调
-*restore*：是否清除该模型的所有记录
+*Action*：动作  
+*callBack*：回调  
+*restore*：是否清除该模型的所有记录  
 
 **返回值：** 无  
 **语法**
@@ -163,7 +163,7 @@ dispatch({type:"modelName", data: {num: "1232"}});
 **类型：** Func  
 **用途：** store回滚到初始化状态  
 **参数**  
-*modelName*：模型名称
+*modelName*：模型名称  
 
 **返回值：** 无  
 **语法**
@@ -177,34 +177,35 @@ rollBack("modelName");
 >#### Observer
 
 **类型：** Object   
-**用途：** 订阅模式  
+**用途：** 订阅模式   
 **方法**  
+
 ***subscribe***
 
 **用途：** 注册观察者  
 **参数**  
-*topic*：订阅号  
-*func*：收到推送的响应  
-*only*：是否支持多个订阅者  
+*topic*：订阅号   
+*func*：收到推送的响应   
+*only*：是否支持多个订阅者   
 
 ***publish***
 
 **用途：** 推送  
 **参数**  
-*topic*：订阅号
-*message*：消息内容
+*topic*：订阅号  
+*message*：消息内容  
 
 ***unsubscribe***
 
 **用途：** 订阅者退订  
 **参数**  
-*ID*：订阅id
+*ID*：订阅id 
 
 ***unsubscribeTopic***
 
 **用途：** 订阅号退订，所有关联的订阅者都退订  
 **参数**  
-*topic*：订阅号
+*topic*：订阅号 
 
 **返回值：** ID （订阅ID）   
 **语法**
