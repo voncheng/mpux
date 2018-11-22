@@ -1,0 +1,13 @@
+<!--pages/gym/index.wxml-->
+<view class='container'>
+  <text>{{props.gym.topic}}</text>
+  <view class='step' >
+    做
+    <button bindtap='minus' size='mini'>-</button>
+    {{props.gym.count}}
+    <button bindtap='puls' size='mini'>+</button>
+    个俯卧撑
+  </view>
+  <button class='back' bindtap='effect' size='mini'>回家看看效果</button>
+</view>
+

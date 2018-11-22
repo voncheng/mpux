@@ -1,0 +1,7 @@
+/**index.wxss**/
+.to_gym {
+  margin-top: 50rpx;
+}
+.tips {
+  margin-top: 50rpx;
+}

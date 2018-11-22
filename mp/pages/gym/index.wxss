@@ -1,0 +1,10 @@
+/* pages/gym/index.wxss */
+.step {
+  margin-top: 100rpx;
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+}
+.back {
+  margin-top: 100rpx;
+}

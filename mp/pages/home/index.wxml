@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+  {{props.home.message}}
+  {{props.gym.count}}
+  {{dd}}
+  <Comp class="tips" />
+
+  <button class='to_gym' bindtap='toGym'>去健身</button>
+  
+</view>

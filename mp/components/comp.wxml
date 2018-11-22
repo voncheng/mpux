@@ -1,0 +1,2 @@
+<!--components/comp.wxml-->
+<text>今天做了{{props.gym.count}}个俯卧撑</text>
