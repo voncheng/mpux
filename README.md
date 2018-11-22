@@ -1,10 +1,19 @@
-# # <div style="text-align:center">小程序状态管理</div>
+# <div style="text-align:center">小程序状态管理</div>
 ## 概述
 
 小程序状态管理组件，下面简称`JRSM`。小程序的Page不能像React组件一样传递状态，所以采用了订阅的模式实现，同样模式很好的解决了一对多的通讯问题。它使用了ES6的Class方式声明组件。提供了组件通讯，状态存储，方法复用等功能。
 
 ## 特点
 `JRSM`没有任何依赖库，纯手工打造高清源码。并且规模小，集成方便，使用灵活。
+
+## 安装
+
+线下文件到copy到自己工程中，资源地址：mpux.zip[https://github.com/VonCheng/mpux/blob/master/dist/mpux.zip?raw=true]
+
+## Example
+
+Demo[https://github.com/VonCheng/mpux/blob/master/dist/mpux.zip?raw=true]
+ 
 
 ## 集成
 
@@ -81,9 +90,9 @@ Selector(["gym"])(Comp);
 
 >#### Provider
 
-**类型：**Func
-**用途：**为App提过一个自定义的store，用来存储所有被管理的状态
-**参数**
+**类型：** Func
+**用途：** 为App提过一个自定义的store，用来存储所有被管理的状态 
+**参数** 
 *Store*：存储状态对象
 *App*：已声明的Application类
 
