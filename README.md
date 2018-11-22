@@ -93,9 +93,8 @@ Selector(["gym"])(Comp);
 **类型：** Func
 **用途：** 为App提过一个自定义的store，用来存储所有被管理的状态 
 **参数** 
-*Store*：存储状态对象
-*App*：已声明的Application类
-
+*Store*: 存储状态对象
+*App*: 已声明的Application类
 **返回值：**无
 **语法**
 
@@ -109,10 +108,9 @@ Provider({})(App);
 **类型：** Func  
 **用途：** 选取一个或多个数据模型，以及若干个Action绑定到你的组件或页面上。  
 **参数**
-*modelArray*：选择的模型
+*modelArray*: 选择的模型
 *actionMap*: 选择的事件
 *Class*: 绑定的组件或页面
-
 **返回值：** 无
 **语法**
 
@@ -129,8 +127,7 @@ Selector(["home"],{run})(Home);
 **类型：** Func  
 **用途：** 将自定义的模型注册到容器中，以供pag或component去选取绑定。只需要注册一次，整个小程序的生命周期内可用。直到小程序被回收，这和store的生命周期相同  
 **参数**
-*model*：模型
-
+*model*: 模型
 **返回值：** 无
 **语法**
 
