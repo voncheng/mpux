@@ -1,6 +1,6 @@
 //app.js
 
-import Provider, { Application, Controller, Selector } from "./utils/jr-sm/index.js"
+import Provider, { Application, Controller, Selector } from "./utils/mpux.js"
 import BaseController from "./super/base-vc.js";
 
 

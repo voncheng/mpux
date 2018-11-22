@@ -1,5 +1,5 @@
 // components/comp.js
-import { Selector, Module } from "../utils/jr-sm/index.js"
+import { Selector, Module } from "../utils/mpux.js"
 import { action } from "../actions/action.js"
 require('../models/gym.m.js');
 

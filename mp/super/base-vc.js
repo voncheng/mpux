@@ -1,4 +1,4 @@
-import { Controller } from "../utils/jr-sm/index.js";
+import { Controller } from "../utils/mpux.js";
 
 // 制作一个基础类
 export default class BaseController extends Controller {

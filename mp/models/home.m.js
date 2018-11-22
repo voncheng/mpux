@@ -1,7 +1,7 @@
-import { Model, modelRegister } from "../utils/jr-sm/index.js"
+import { Model, modelRegister } from "../utils/mpux.js"
 
 class Home extends Model {
-  namespace = "home"
+  static namespace = "home"
   data = {
     goods:[],
     message: "Holiday",

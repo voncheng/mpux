@@ -12,7 +12,7 @@
 2.小程序入口文件需要做如下修改。
 
 ``` 
-import Provider, { Application } from "./utils/jr-sm/index.js"
+import Provider, { Application } from "./utils/mpux/index.js"
 class App extends Application {
   onLaunch() {
     // 展示本地存储能力
@@ -32,7 +32,7 @@ Provider({})(App);
 3.在Page中使用
 
 ```
-import { Controller, Selector } from "../../utils/jr-sm/index.js"
+import { Controller, Selector } from "../../utils/mpux/index.js"
 import { run } from "../../actions/action.js"
 require('../../models/home.m.js');
 
@@ -58,7 +58,7 @@ Selector(["home"])(Home);
 
 ```
 
-import { Selector, Module } from "../utils/jr-sm/index.js"
+import { Selector, Module } from "../utils/mpux/index.js"
 import { action } from "../actions/action.js"
 require('../models/gym.m.js');
 

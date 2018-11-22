@@ -1,7 +1,7 @@
 //index.js
 
 require('../../models/home.m.js');
-import { store } from '../../utils/jr-sm/index.js';
+import { store } from '../../utils/mpux.js';
 
 class Home extends global.Controller {
   constructor(props) {
