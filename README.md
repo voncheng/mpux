@@ -9,7 +9,7 @@
 
 ## 安装
 
-线下文件到copy到自己工程中，资源地址：[mpux.zip](https://github.com/VonCheng/mpux/blob/master/dist/mpux.zip?raw=true)
+下载文件copy到自己工程中，资源地址：[mpux.zip](https://github.com/VonCheng/mpux/blob/master/dist/mpux.zip?raw=true)
 
 **Example：**
 
