@@ -1,5 +1,6 @@
-# <div style="text-align:center">Mpux一个小程序框架</div>
-## 概述
+
+<p align="center"><img src="https://m.360buyimg.com/jrqb/jfs/t30859/57/541351828/4843/455b13f3/5bf66f4eN9f102152.png" width="60" hegiht="60" /></p>
+<h2 align="center">Mpux一个小程序框架</h2> 
 
 `Mpux`提供小程序状态管理功能以及页面与组件的原型结构，让开发者能够使用继承的方式实现代码复用以及流程控制。同时它还提供了观察这模式以完善组件或页面的通讯功能。小程序的Page不能像React组件一样传递状态，所以采用了订阅的模式实现，同样模式很好的解决了一对多的通讯问题。它使用了ES6的Class方式声明组件。提供了组件通讯，状态存储，方法复用等功能。
 
