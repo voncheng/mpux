@@ -7,10 +7,6 @@
 ## 特点
 `Mpux`没有任何依赖库，纯手工打造高清源码。并且规模小，集成方便，使用灵活。
 
-## 安装
-
-下载文件copy到自己工程中，资源地址：[mpux.zip](https://github.com/VonCheng/mpux/blob/master/dist/mpux.zip?raw=true)
-
 **Example：**
 
 [Demo](https://github.com/VonCheng/mpux/blob/master/example.zip?raw=true)
@@ -18,7 +14,8 @@
 
 ## 集成
 
-1.拷贝文件到小程序工程中，然后就可义使用了。
+1.下载资源[mpux.zip](https://github.com/VonCheng/mpux/blob/master/dist/mpux.zip?raw=true)，解压拷贝文件到小程序工程中，然后就可义使用了。  
+
 2.小程序入口文件需要做如下修改。
 
 ``` javascript
@@ -38,8 +35,23 @@ class App extends Application {
 Provider({})(App);
 
 ```
+3.注册Model
 
-3.在Page中使用
+``` javascript
+import { Model, modelRegister } from "../utils/mpux.js"
+
+class Home extends Model {
+  static namespace = "home"
+  data = {
+    goods:[],
+    message: "Holiday",
+  }
+}
+modelRegister(Home);
+
+```
+
+4.在Page中使用
 
 ``` javascript
 import { Controller, Selector } from "../../utils/mpux/index.js"
@@ -64,7 +76,7 @@ class Home extends Controller {
 }
 Selector(["home"])(Home);
 ```
-4.在component中使用
+5.在component中使用
 
 ``` javascript
 
@@ -79,13 +91,11 @@ class Comp extends Module {
       abc: 112
     }
   }
-  click() {
-    this.actions.action();
-  }
 }
 Selector(["gym"])(Comp);
 
 ```
+
 
 ## API
 
@@ -125,7 +135,7 @@ Selector([model,..], {action,..})(Controller | Module);
 // 例子
 Selector(["home"],{run})(Home);
 ```
->#### modelregister
+>#### modelRegister
 
 **类型：** Func   
 **用途：** 将自定义的模型注册到容器中，以供pag或component去选取绑定。只需要注册一次，整个小程序的生命周期内可用。直到小程序被回收，这和store的生命周期相同   
@@ -136,9 +146,9 @@ Selector(["home"],{run})(Home);
 **语法**
 
 ``` javascript
-modelregister(model);
+modelRegister(model);
 // 例子
-modelregister(Model);
+modelRegister(Model);
 ```
 
 >#### dispatch
