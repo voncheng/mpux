@@ -43,7 +43,7 @@ class Gym extends global.Controller {
    * 生命周期函数--监听页面卸载
    */
   onUnload() {
-    this.baseActions.rollBack("home");
+
   }
 
   /**
@@ -72,7 +72,7 @@ class Gym extends global.Controller {
   }
   puls() {
     this.actions.plus().then((result) => {
-      // console.log(result);
+      console.log(result);
     }).catch((err) => {
 
     });

@@ -6,5 +6,5 @@
   <Comp class="tips" />
 
   <button class='to_gym' bindtap='toGym'>去健身</button>
-  
+  <button bindtap="rollBack">想回到过去</button>
 </view>

@@ -10,8 +10,5 @@ class Comp extends Module {
       abc: 112
     }
   }
-  click() {
-    this.actions.action();
-  }
 }
 Selector(["gym"])(Comp);

@@ -22,5 +22,10 @@ class Home extends global.Controller {
       url: '/pages/gym/index',
     })
   }
+  rollBack() {
+    // 回滚
+    this.baseActions.rollBack("home");  
+    this.baseActions.rollBack("gym");      
+  }
 }
 global.Selector(["home", "gym"])(Home);
