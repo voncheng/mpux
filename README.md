@@ -20,6 +20,10 @@
 
 ``` javascript
 import Provider, { Application } from "./utils/mpux/index.js"
+// 导入模型完成注册
+require('./models/gym.m.js');
+require('./models/home.m.js');
+
 class App extends Application {
   onLaunch() {
     // 展示本地存储能力
@@ -55,7 +59,6 @@ modelRegister(Home);
 
 ``` javascript
 import { Controller, Selector } from "../../utils/mpux/index.js"
-require('../../models/home.m.js');
 
 class Home extends Controller {
   constructor(props) {
@@ -80,7 +83,6 @@ Selector(["home"])(Home);
 ``` javascript
 
 import { Selector, Module } from "../utils/mpux/index.js"
-require('../models/gym.m.js');
 
 class Comp extends Module {
   constructor(props) {
