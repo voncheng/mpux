@@ -2,6 +2,9 @@
 
 import Provider, { Application, Controller, Selector } from "./utils/mpux.js"
 import BaseController from "./super/base-vc.js";
+// 导入模型完成注册
+require('./models/gym.m.js');
+require('./models/home.m.js');
 
 
 //如果不想每个文件都导入mpux.js，可以挂载到global下

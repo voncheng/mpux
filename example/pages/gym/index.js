@@ -1,6 +1,5 @@
 // pages/gym/index.js
 import { plus, minus, effect } from "../../actions/action.js"
-require('../../models/gym.m.js');
 
 class Gym extends global.Controller {
   constructor(props) {
