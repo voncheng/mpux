@@ -244,3 +244,6 @@ observer.publish('refresh', {statue: true});
 
 **类型：** Class  
 **用途：** 小程序定义模型需要集成自Model类
+
+## Support
+wechat: chengpu552877
