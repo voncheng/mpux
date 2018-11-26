@@ -55,7 +55,6 @@ modelRegister(Home);
 
 ``` javascript
 import { Controller, Selector } from "../../utils/mpux/index.js"
-import { run } from "../../actions/action.js"
 require('../../models/home.m.js');
 
 class Home extends Controller {
@@ -81,7 +80,6 @@ Selector(["home"])(Home);
 ``` javascript
 
 import { Selector, Module } from "../utils/mpux/index.js"
-import { action } from "../actions/action.js"
 require('../models/gym.m.js');
 
 class Comp extends Module {
