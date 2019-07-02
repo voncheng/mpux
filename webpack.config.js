@@ -1,5 +1,5 @@
 'use strict';
-
+var webpack = require('webpack');
 const path = require('path');
 const UglifyJsPlugin=require('uglifyjs-webpack-plugin');
 
@@ -28,8 +28,14 @@ const config = {
               }
             }
         })
-    ]
-  }
+      ]
+  },
+  plugins: [
+    new webpack.NoEmitOnErrorsPlugin()
+  ],
+  // resolve: {
+  //   modules: [path.resolve(__dirname, 'node_modules')],
+  // },
 };
 
 module.exports = config;
