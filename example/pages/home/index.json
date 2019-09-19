@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "Home",
-  "usingComponents": {
-    "Comp": "/components/comp"
-  },
-  "backgroundColor": "#333333"
-}
